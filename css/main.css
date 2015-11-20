@@ -126,8 +126,8 @@ section.active {
 section.future {
     opacity:0.5;
 }
-section a {
-    color:#ccc;
+p {
+    margin-top:0;
 }
 .section--light {
     color:#fefefe;
@@ -135,7 +135,10 @@ section a {
 .section--light .section__number {
     border-bottom-color:#fefefe;
 }
-
+.section--image {
+    background-size:cover;
+    background-position:50% 50%;
+}
 /*
 $charcoal:#333;
 $light:#f9f9f9;
@@ -153,11 +156,14 @@ $gold:#e4b53c;
     color:#00b3eb;
 }
 .section--type2 {
-    background-color:#0b2c37;
+    background-color:#e4b53c;
     color:#fff;
 }
 .section--type2 .section__number {
-    color:#e4b53c;
+    color:#0b2c37;
+}
+.section--type2 .section__content a {
+    color:#eee;
 }
 .section--type3 {
     background-color:#f0f2e9;
@@ -166,17 +172,22 @@ $gold:#e4b53c;
 .section--type3 .section__number {
     color:#a23479;
 }
-.section--type3 a {
+.section--type3 .section__content a {
     color:#666;
 }
 .section--image {
     background-size:cover;
-    background-position:50% 50%;
+    background-position:50% 100%;
 }
 .section__content {
     width:80%;
     max-width:800px;
     padding:1em 5%;
+    max-height:70%;
+    overflow:auto;
+}
+.section__content a {
+    color:#ccc;
 }
 .csstransforms .section__content {
     position:absolute;
@@ -196,12 +207,6 @@ $gold:#e4b53c;
     font-size:16px;
     font-size:1rem;
 }
-.section__logo {
-    text-align:center;
-}
-.section__logo img {
-    max-width:100%;
-}
 .section__text {
     margin:10px 0 0;
 }
@@ -211,27 +216,52 @@ $gold:#e4b53c;
 .section__text *:last-child {
     margin-bottom:0;
 }
-.section__font--tiny {
-    font-size:16px;
-    font-size:1rem;
+/* Intro bits */
+.intro__header {
+    margin:0;
+    color:#00b3eb;
+    font-size:80px;
+    font-size:5rem;
+    line-height:0.8;
 }
-.section__font--small {
-    font-size:24px;
-    font-size:1.5rem;
+.intro__subheader {
+    margin:0 0 24px;
+    color:#00b3eb;
+    font-size:32px;
+    font-size:2rem;
+    line-height:0.8;
+    font-style:italic;
 }
-.section__font--medium {
+.intro__logo {
+    position:absolute;
+    top:20px;
+    left:10%;
+    width:198px;
+    height:30px;
+    line-height:30px;
+    margin:0;
+    max-width:80%;
+}
+.intro__logo img {
+    max-width:100%;
+}
+.intro__scroll {
+    position:absolute;
+    bottom:10px;
+    left:50%;
+    width:12em;
+    margin:0 0 0 -6em;
+    text-align:center;
+    color:#00b3eb;
+    text-decoration:none;
+}
+.outro__header {
+    margin:0 0 12px;
+    color:#fff;
     font-size:48px;
     font-size:3rem;
+    line-height:1.1;
 }
-.section__font--large {
-    font-size:96px;
-    font-size:6rem;
-}
-.section__font--huge {
-    font-size:192px;
-    font-size:12rem;
-}
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -312,6 +342,20 @@ $gold:#e4b53c;
    Modify as content requires.
    ========================================================================== */
 
+@media only screen and (min-width: 16.5em) {
+    /* Header still too wide when width < ~264px */
+    .intro__header {
+        font-size:96px;
+        font-size:6rem;
+    }
+}
+@media only screen and (min-width: 22em) {
+    /* Header gets too wide when width < ~352px */
+    .intro__header {
+        font-size:128px;
+        font-size:8rem;
+    }
+}
 @media only screen and (min-width: 35em) and (max-width: 62.5em) {
     /* Style adjustments for viewports that meet the condition */
     html {
@@ -322,6 +366,11 @@ $gold:#e4b53c;
     /* Style adjustments for viewports that meet the condition */
     html {
         font-size:32px;
+    }
+    .intro__logo {
+        left:100px;
+        width:264px;
+        height:40px;
     }
 }
 
