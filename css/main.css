@@ -140,8 +140,9 @@ section.future {
 .section--type3 {
     background-color:#343434;
 }
-.section--type1 {
+.section--image {
     background-size:cover;
+    background-position:50% 50%;
 }
 .section__content {
     width:80%;
@@ -174,14 +175,18 @@ section.future .section__number h2 {
             transform:translateY(calc(100% + 20px));
 }
 section.active .section__number h2 {
-    /* Adds delay when hiding */
-    -webkit-transition-delay:0.6s;
-            transition-delay:0.6s;
+    /* Adds delay when showing */
+    -webkit-transition-delay:0.2s;
+            transition-delay:0.2s;
     -webkit-transform:translateY(0%);
             transform:translateY(0%);
 }
 .section__number small {
     font-size:16px;
+    font-size:1rem;
+}
+.section__logo {
+    max-width:100%;
 }
 .section__text {
 }
@@ -210,18 +215,23 @@ section.active .section__number h2 {
 }
 .section__font--tiny {
     font-size:16px;
+    font-size:1rem;
 }
 .section__font--small {
     font-size:24px;
+    font-size:1.5rem;
 }
 .section__font--medium {
     font-size:48px;
+    font-size:3rem;
 }
 .section__font--large {
     font-size:96px;
+    font-size:6rem;
 }
 .section__font--huge {
-    font-size:198px;
+    font-size:192px;
+    font-size:12rem;
 }
 
 /* ==========================================================================
@@ -306,6 +316,9 @@ section.active .section__number h2 {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+    html {
+        font-size:20px;
+    }
 }
 
 @media print,
