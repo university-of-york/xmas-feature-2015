@@ -85,10 +85,15 @@ textarea {
    ========================================================================== */
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #333;
-    padding: 0.2em 0;
+  margin: 0;
+  background: #ccc;
+  color: #333;
+  padding: 0.4em 0;
+  text-align: center;
+  font-size: 16px;
+}
+.browserupgrade a {
+  color:#666;
 }
 
 /* ==========================================================================
@@ -100,14 +105,12 @@ html {
 }
 body {
     height:100%;
-    font-family:"Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight:400;
-    letter-spacing:0.03em;
+    font-family: "chaparral-pro",Georgia,"Times New Roman",Times,serif;
+    font-weight: 400;
 }
 section {
     width:100%;
     min-height:100%;
-    text-align:center;
     position:relative;
     overflow:hidden;
     color:#333;
@@ -123,6 +126,9 @@ section.active {
 section.future {
     opacity:0.5;
 }
+section a {
+    color:#ccc;
+}
 .section--light {
     color:#fefefe;
 }
@@ -130,14 +136,38 @@ section.future {
     border-bottom-color:#fefefe;
 }
 
+/*
+$charcoal:#333;
+$light:#f9f9f9;
+$blue:#00b3eb;
+$pink:#a23479;
+$teal:#0f3d4c;
+$gold:#e4b53c;
+*/
+
 .section--type1 {
-    background-color:#fefefe;
+    background-color:#0f3d4c;
+    color:#fff;
+}
+.section--type1 .section__number {
+    color:#00b3eb;
 }
 .section--type2 {
-    background-color:#cdcdcd;
+    background-color:#0b2c37;
+    color:#fff;
+}
+.section--type2 .section__number {
+    color:#e4b53c;
 }
 .section--type3 {
-    background-color:#343434;
+    background-color:#f0f2e9;
+    color:#333;
+}
+.section--type3 .section__number {
+    color:#a23479;
+}
+.section--type3 a {
+    color:#666;
 }
 .section--image {
     background-size:cover;
@@ -155,62 +185,31 @@ section.future {
     -webkit-transform:translate(-50%, -50%);
             transform:translate(-50%, -50%);
 }
-.section__number {
-    margin:0 0 20px;
+.section__stat {
+    font-size:2rem;
     line-height:1;
-    overflow:hidden;
-    border-bottom:1px solid #333;
-    display:inline-block;
 }
-.section__number h2 {
-    font-weight:100;
-    margin:0 0 10px;
-    line-height:0.9;
-    -webkit-transition:0.4s -webkit-transform ease-in-out;
-            transition:0.4s         transform ease-in-out;
-}
-section.future .section__number h2 {
-    -webkit-transform:translateY(calc(100% + 20px));
-            transform:translateY(calc(100% + 20px));
-}
-section.active .section__number h2 {
-    /* Adds delay when showing */
-    -webkit-transition-delay:0.2s;
-            transition-delay:0.2s;
-    -webkit-transform:translateY(0%);
-            transform:translateY(0%);
+.section__number {
+    font-weight:700;
 }
 .section__number small {
     font-size:16px;
     font-size:1rem;
 }
 .section__logo {
+    text-align:center;
+}
+.section__logo img {
     max-width:100%;
 }
 .section__text {
+    margin:10px 0 0;
 }
 .section__text *:first-child {
     margin-top:0;
 }
 .section__text *:last-child {
     margin-bottom:0;
-}
-.section__link {
-    margin:20px 0 0;
-}
-.section__link a {
-    color:#333;
-    padding:10px 40px;
-    line-height:1.2;
-    background:#fff;
-    border-radius:4px;
-    text-decoration:none;
-    display:inline-block;
-    cursor:pointer;
-}
-.section--type1 .section__link a {
-    color:#fff;
-    background:#333;
 }
 .section__font--tiny {
     font-size:16px;
@@ -313,10 +312,16 @@ section.active .section__number h2 {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 35em) and (max-width: 62.5em) {
     /* Style adjustments for viewports that meet the condition */
     html {
         font-size:20px;
+    }
+}
+@media only screen and (min-width: 62.5em) {
+    /* Style adjustments for viewports that meet the condition */
+    html {
+        font-size:32px;
     }
 }
 
