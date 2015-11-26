@@ -114,16 +114,19 @@ section {
     position:relative;
     overflow:hidden;
     color:#333;
-    -webkit-transition:opacity 0.4s ease-in-out;
-            transition:opacity 0.4s ease-in-out;
+    background:
+    url('../img/separator-1.png') bottom repeat-x,
+    url('../img/separator-2.png') top repeat-x;
+    background-size:100%;
+
 }
-section.past {
-    opacity:0.1;
+section.past .section__content {
+    opacity:0.5;
 }
-section.active {
+section.active .section__content {
     opacity:1;
 }
-section.future {
+section.future .section__content {
     opacity:0.5;
 }
 p {
@@ -185,6 +188,8 @@ $gold:#e4b53c;
     padding:1em 5%;
     max-height:70%;
     overflow:auto;
+    -webkit-transition:opacity 0.4s ease-in-out;
+            transition:opacity 0.4s ease-in-out;
 }
 .section__content a {
     color:#ccc;
