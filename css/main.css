@@ -178,6 +178,16 @@ $gold:#e4b53c;
 .section--type3 .section__content a {
     color:#666;
 }
+.section--type4 {
+    background-color:#9E1722;
+    color:#fff;
+}
+.section--type4 .section__number {
+    color:#e4b53c;
+}
+.section--type4 .section__content a {
+    color:#eee;
+}
 .section--image {
     background-size:cover;
     background-position:50% 100%;
