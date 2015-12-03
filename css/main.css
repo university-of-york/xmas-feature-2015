@@ -107,6 +107,7 @@ body {
     height:100%;
     font-family: "chaparral-pro",Georgia,"Times New Roman",Times,serif;
     font-weight: 400;
+    background: #000 url('../img/background-pattern.png') repeat fixed  ;
 }
 section {
     width:100%;
@@ -114,11 +115,6 @@ section {
     position:relative;
     overflow:hidden;
     color:#333;
-    background:
-    url('../img/separator-1.png') bottom repeat-x,
-    url('../img/separator-2.png') top repeat-x;
-    background-size:100%;
-
 }
 section.past .section__content {
     opacity:0.5;
@@ -153,6 +149,7 @@ $gold:#e4b53c;
 
 .section--type1 {
     background-color:#0f3d4c;
+    background-color:rgba(15,61,76,0.96);
     color:#fff;
 }
 .section--type1 .section__number {
@@ -160,6 +157,7 @@ $gold:#e4b53c;
 }
 .section--type2 {
     background-color:#e4b53c;
+    background-color:rgba(228,181,60,0.96);
     color:#fff;
 }
 .section--type2 .section__number {
@@ -170,6 +168,7 @@ $gold:#e4b53c;
 }
 .section--type3 {
     background-color:#f0f2e9;
+    background-color:rgba(240,242,233,0.96);
     color:#333;
 }
 .section--type3 .section__number {
@@ -180,6 +179,7 @@ $gold:#e4b53c;
 }
 .section--type4 {
     background-color:#9E1722;
+    background-color:rgba(158,23,34,0.96);
     color:#fff;
 }
 .section--type4 .section__number {
