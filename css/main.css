@@ -119,13 +119,13 @@ section {
     color:#333;
 }
 section.past .section__content {
-    opacity:0.5;
+    opacity:0.7;
 }
 section.active .section__content {
     opacity:1;
 }
 section.future .section__content {
-    opacity:0.5;
+    opacity:0.7;
 }
 p {
     margin-top:0;
@@ -158,15 +158,12 @@ $gold:#e4b53c;
     color:#00b3eb;
 }
 .section--type2 {
-    background-color:#e4b53c;
-    background-color:rgba(228,181,60,0.97);
+    background-color:#EAAD10;
+    background-color:rgba(234,173,16,0.97);
     color:#fff;
 }
 .section--type2 .section__number {
     color:#0b2c37;
-}
-.section--type2 .section__content a {
-    color:#eee;
 }
 .section--type3 {
     background-color:#f0f2e9;
@@ -177,7 +174,7 @@ $gold:#e4b53c;
     color:#a23479;
 }
 .section--type3 .section__content a {
-    color:#666;
+    color:#444;
 }
 .section--type4 {
     background-color:#9E1722;
@@ -187,16 +184,12 @@ $gold:#e4b53c;
 .section--type4 .section__number {
     color:#e4b53c;
 }
-.section--type4 .section__content a {
-    color:#eee;
-}
 .section--image {
     background-size:cover;
     background-position:50% 100%;
 }
 .section__content {
     width:80%;
-    max-width:800px;
     padding:1em 5%;
     max-height:70%;
     overflow:auto;
@@ -204,7 +197,10 @@ $gold:#e4b53c;
             transition:opacity 0.4s ease-in-out;
 }
 .section__content a {
-    color:#ccc;
+    color:#fff;
+}
+.section__content a:hover {
+    color:#eee;
 }
 .csstransforms .section__content {
     position:absolute;
@@ -274,11 +270,12 @@ $gold:#e4b53c;
 }
 .outro__header {
     margin:0 0 12px;
-    color:#fff;
+    color:#9E1722;
     font-size:48px;
     font-size:3rem;
     line-height:1.1;
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
