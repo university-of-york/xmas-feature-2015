@@ -1,36 +1,31 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+img,legend{border:0}legend,td,th{padding:0}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,optgroup,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre,textarea{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}table{border-collapse:collapse;border-spacing:0}
 /*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
 html {
-    color: #333;
-    font-size: 1em;
-    line-height: 1.4;
+  color: #333;
+  font-size: 1em;
+  line-height: 1.4;
 }
 html.no-mediaqueries {
-    font-size:2em;
+  font-size:2em;
 }
-
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
-
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
-
 img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
-
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
-
 .browserupgrade {
   margin: 0;
   background: #ccc;
@@ -42,302 +37,281 @@ img {
 .browserupgrade a {
   color:#666;
 }
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
 html {
-    height:100%;
+  height:100%;
 }
 body {
-    height:100%;
-    font-family:"chaparral-pro",Georgia,"Times New Roman",Times,serif;
-    font-weight:400;
-    background-attachment:scroll;
-    background-attachment:fixed;
-    background-image:url(../img/background-pattern.png);
-    background-repeat:repeat;
-    background-size:contain;
+  height:100%;
+  font-family:"chaparral-pro",Georgia,"Times New Roman",Times,serif;
+  font-weight:400;
+  background-color:#000;
+  background-attachment:fixed;
+  background-image:url(../img/background-pattern.png);
+  background-repeat:repeat;
+  background-size:contain;
 }
 section {
-    width:100%;
-    min-height:100%;
-    /*min-height:100vh; // Messes up iOS */
-    position:relative;
-    overflow:hidden;
-    color:#333;
+  width:100%;
+  min-height:100%;
+  position:relative;
+  overflow:hidden;
+  color:#333;
 }
 section.past .section__content {
-    opacity:0.5;
+  opacity:0.5;
 }
 section.active .section__content {
-    opacity:1;
+  opacity:1;
 }
 section.future .section__content {
-    opacity:0.5;
+  opacity:0.5;
 }
 p {
-    margin-top:0;
+  margin-top:0;
 }
 .section--light {
-    color:#fefefe;
+  color:#fefefe;
 }
 .section--light .section__number {
-    border-bottom-color:#fefefe;
+  border-bottom-color:#fefefe;
 }
 .section--image {
-    background-size:cover;
-    background-position:50% 50%;
+  background-size:cover;
+  background-position:50% 50%;
 }
 .section--type1 {
-    background-color:#0f3d4c;
-    background-color:rgba(15,61,76,0.97);
-    color:#fff;
+  background-color:#0f3d4c;
+  background-color:rgba(15,61,76,0.97);
+  color:#fff;
 }
 .section--type1 .section__number {
-    color:#00b3eb;
+  color:#00b3eb;
 }
 .section--type2 {
-    background-color:#e4b53c;
-    background-color:rgba(228,181,60,0.97);
-    color:#fff;
+  background-color:#e4b53c;
+  background-color:rgba(228,181,60,0.97);
+  color:#fff;
 }
 .section--type2 .section__number {
-    color:#0b2c37;
+  color:#0b2c37;
 }
 .section--type2 .section__content a {
-    color:#eee;
+  color:#eee;
 }
 .section--type3 {
-    background-color:#f0f2e9;
-    background-color:rgba(240,242,233,0.97);
-    color:#333;
+  background-color:#f0f2e9;
+  background-color:rgba(240,242,233,0.97);
+  color:#333;
 }
 .section--type3 .section__number {
-    color:#a23479;
+  color:#a23479;
 }
 .section--type3 .section__content a {
-    color:#666;
+  color:#666;
 }
 .section--type4 {
-    background-color:#9E1722;
-    background-color:rgba(158,23,34,0.97);
-    color:#fff;
+  background-color:#9E1722;
+  background-color:rgba(158,23,34,0.97);
+  color:#fff;
 }
 .section--type4 .section__number {
-    color:#e4b53c;
+  color:#e4b53c;
 }
 .section--type4 .section__content a {
-    color:#eee;
+  color:#eee;
 }
 .section--image {
-    background-size:cover;
-    background-position:50% 100%;
+  background-size:cover;
+  background-position:50% 100%;
 }
 .section__content {
-    width:80%;
-    max-width:800px;
-    padding:1em 5%;
-    max-height:70%;
-    overflow:auto;
-    -webkit-transition:opacity 0.4s ease-in-out;
-            transition:opacity 0.4s ease-in-out;
-}
-.section__content a {
-    color:#ccc;
-}
-.no-csstransforms .section__content {
-    position:absolute;
-    top:50%;
-    left:50%;
-    width:800px;
-    margin:-200px 0 0 -400px;
+  position:absolute;
+  top:15%;
+  left:50%;
+  width:800px;
+  margin:0 0 0 -400px;
+  max-width:800px;
+  padding:0 5%;
+  max-height:70%;
+  overflow:auto;
+  -webkit-transition:opacity 0.2s ease-in-out;
+          transition:opacity 0.2s ease-in-out;
 }
 .csstransforms .section__content {
-    position:absolute;
-    top:50%;
-    left:50%;
-    -webkit-transform:translate(-50%, -50%);
-        -ms-transform:translate(-50%, -50%);
-            transform:translate(-50%, -50%);
+  width:80%;
+  top:50%;
+  margin:0;
+  padding:1em 5%;
+  -webkit-transform:translate(-50%, -50%);
+      -ms-transform:translate(-50%, -50%);
+          transform:translate(-50%, -50%);
+}
+.section__content a {
+  color:#ccc;
 }
 .section__stat {
-    font-size:2rem;
-    line-height:1;
+  font-size:2rem;
+  line-height:1;
 }
 .section__number {
-    font-weight:700;
+  font-weight:700;
 }
 .section__number small {
-    font-size:16px;
-    font-size:1rem;
+  font-size:16px;
+  font-size:1rem;
 }
 .section__text {
-    margin:10px 0 0;
+  margin:10px 0 0;
 }
 .section__text *:first-child {
-    margin-top:0;
+  margin-top:0;
 }
 .section__text *:last-child {
-    margin-bottom:0;
+  margin-bottom:0;
 }
 /* Intro bits */
 .intro__header {
-    margin:0;
-    color:#00b3eb;
-    font-size:80px;
-    font-size:5rem;
-    line-height:0.8;
+  margin:0;
+  color:#00b3eb;
+  font-size:80px;
+  font-size:5rem;
+  line-height:0.8;
 }
 .intro__subheader {
-    margin:0 0 24px;
-    color:#00b3eb;
-    font-size:32px;
-    font-size:2rem;
-    line-height:0.8;
-    font-style:italic;
+  margin:0 0 24px;
+  color:#00b3eb;
+  font-size:32px;
+  font-size:2rem;
+  line-height:0.8;
+  font-style:italic;
 }
 .intro__logo {
-    position:absolute;
-    top:20px;
-    left:10%;
-    width:198px;
-    height:30px;
-    line-height:30px;
-    margin:0;
-    max-width:80%;
+  position:absolute;
+  top:20px;
+  left:10%;
+  width:198px;
+  height:30px;
+  line-height:30px;
+  margin:0;
+  max-width:80%;
 }
 .intro__logo img {
-    max-width:100%;
+  max-width:100%;
 }
 .intro__scroll {
-    position:absolute;
-    bottom:10px;
-    left:50%;
-    width:12em;
-    margin:0 0 0 -6em;
-    text-align:center;
-    color:#00b3eb;
-    text-decoration:none;
+  position:absolute;
+  bottom:10px;
+  left:50%;
+  width:12em;
+  margin:0 0 0 -6em;
+  text-align:center;
+  color:#00b3eb;
+  text-decoration:none;
 }
 .outro__header {
-    margin:0 0 12px;
-    color:#fff;
-    font-size:48px;
-    font-size:3rem;
-    line-height:1.1;
+  margin:0 0 12px;
+  color:#fff;
+  font-size:48px;
+  font-size:3rem;
+  line-height:1.1;
 }
-
 /* ==========================================================================
    Media Queries for Responsive Design.
    ========================================================================== */
-
 @media only screen and (min-width: 16.5em) {
-    /* Header still too wide when width < ~264px */
-    .intro__header {
-        font-size:96px;
-        font-size:6rem;
-    }
+  /* Header still too wide when width < ~264px */
+  .intro__header {
+    font-size:96px;
+    font-size:6rem;
+  }
 }
 @media only screen and (min-width: 22em) {
-    /* Header gets too wide when width < ~352px */
-    .intro__header {
-        font-size:128px;
-        font-size:8rem;
-    }
+  /* Header gets too wide when width < ~352px */
+  .intro__header {
+    font-size:128px;
+    font-size:8rem;
+  }
 }
 @media only screen and (min-width: 35em) and (max-width: 62.5em) {
-    /* Style adjustments for viewports that meet the condition */
-    html {
-        font-size:20px;
-    }
+  /* Style adjustments for viewports that meet the condition */
+  html {
+    font-size:20px;
+  }
 }
 @media only screen and (min-width: 62.5em) {
-    /* Style adjustments for viewports that meet the condition */
-    html {
-        font-size:32px;
-    }
-    .intro__logo {
-        left:100px;
-        width:264px;
-        height:40px;
-    }
+  /* Style adjustments for viewports that meet the condition */
+  html {
+    font-size:32px;
+  }
+  .intro__logo {
+    left:100px;
+    width:264px;
+    height:40px;
+  }
 }
-
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
-
 @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster:
+                   http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }
