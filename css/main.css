@@ -105,13 +105,15 @@ html {
 }
 body {
     height:100%;
-    font-family: "chaparral-pro",Georgia,"Times New Roman",Times,serif;
-    font-weight: 400;
-    background: #000 url('../img/background-pattern.png') repeat fixed  ;
+    font-family:"chaparral-pro",Georgia,"Times New Roman",Times,serif;
+    font-weight:400;
+    background:#000 url('../img/background-pattern.png') repeat fixed;
+    background-size:contain;
 }
 section {
     width:100%;
     min-height:100%;
+    min-height:100vh;
     position:relative;
     overflow:hidden;
     color:#333;
