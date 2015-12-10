@@ -72,20 +72,8 @@ $(function() {
     }, 400);
   };
 
-  // Add a &nbsp; before the last word in each of the stats
-  var addNBSPs = function() {
-    var $stats = $('.section__stat, #intro p, #intro h3, #outro p');
-    $stats.each(function(i, stat) {
-      var $this = $(this);
-      var string = $this.html();
-      string = string.replace(/ ([^ ]*)$/,' $1');
-      $this.html(string);
-    });
-  };
-
   // Set default sizes
   updateSizes();
-  addNBSPs();
 
   // Event listeners
   $window.on('keydown', scrollPage);
