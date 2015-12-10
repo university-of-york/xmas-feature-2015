@@ -110,6 +110,9 @@ p {
 .section--type3 .section__content a {
   color:#444;
 }
+.section--type3 .section__content a:hover {
+  color:#555;
+}
 .section--type4 {
   background-color:#9E1722;
   background-color:rgba(158,23,34,0.97);
