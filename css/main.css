@@ -292,6 +292,33 @@ p {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
+  section {
+    height:auto;
+    min-height:0;
+  }
+  .section__content {
+    position:static;
+    margin-left:0;
+    padding: 1em 5%;
+  }
+  section.future .section__content,
+  section.past .section__content,
+  section.active .section__content {
+    opacity: 1;
+  }
+  .csstransforms .section__content {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;;
+  }
+  .intro__logo {
+    left:auto;
+    right:10%;
+  }
+  .intro__scroll,
+  .addthis_sharing_toolbox {
+    display:none;
+  }
   /*
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
