@@ -71,6 +71,7 @@ section.future .section__content {
 }
 p {
   margin-top:0;
+  margin-bottom:0.8em;
 }
 .section--light {
   color:#fefefe;
@@ -219,6 +220,11 @@ p {
   font-size:3rem;
   line-height:1.1;
 }
+#atstbx.at4-show {
+  display:inline-block !important;
+  vertical-align:middle;
+}
+
 
 /* ==========================================================================
    Media Queries for Responsive Design.
